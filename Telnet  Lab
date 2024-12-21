@@ -1,0 +1,23 @@
+//Connecting to a specific port of a remote host using telnet protocol//
+//Exiting with the given escape character//
+
+┌──(kali㉿kali)-[~]
+└─$ telnet net-track.services.cityinthe.cloud 8090     
+Trying 18.232.243.186...
+Connected to net-track.services.cityinthe.cloud.
+Escape character is '^]'.
+^]
+telnet> quit
+Connection closed.
+
+//Start telnet with a specific termination character//
+
+┌──(kali㉿kali)-[~]
+└─$ telnet -e x net-track.services.cityinthe.cloud 8090
+Telnet escape character is 'x'.
+Trying 18.205.171.148...
+Connected to net-track.services.cityinthe.cloud.
+Escape character is 'x'.
+x
+telnet> quit
+Connection closed.
