@@ -1,0 +1,25 @@
+Scanning a practice address
+
+kali㉿kali)-[~]
+└─$ nmap ports.cityinthe.cloud      
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2024-12-22 14:47 EST
+Note: Host seems down. If it is really up, but blocking our ping probes, try -Pn
+Nmap done: 1 IP address (0 hosts up) scanned in 3.19 seconds
+
+(kali㉿kali)-[~]
+└─$ nmap ports.cityinthe.cloud -Pn
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2024-12-22 14:48 EST
+Stats: 0:00:50 elapsed; 0 hosts completed (1 up), 1 undergoing Connect Scan
+Connect Scan Timing: About 24.50% done; ETC: 14:52 (0:02:34 remaining)
+
+Nmap scan report for ports.cityinthe.cloud (34.199.237.244)
+Host is up (0.057s latency).
+rDNS record for 34.199.237.244: ec2-34-199-237-244.compute-1.amazonaws.com
+Not shown: 996 filtered tcp ports (no-response)
+PORT      STATE SERVICE
+7/tcp     open  echo
+13/tcp    open  daytime
+37/tcp    open  time
+16080/tcp open  osxwebadmin
+
+Nmap done: 1 IP address (1 host up) scanned in 93.23 seconds
